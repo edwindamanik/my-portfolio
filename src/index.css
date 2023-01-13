@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Root for color */
+:root {
+  --main-color: #bd5d38;
+  --brown-color: #ca7d60;
+  --white-color: #ffffff;
+  --light-brown-color: #e1b6a4;
+}
+
+/* Styling for Side Navbar Contianer */
+.left-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  width: 17rem;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+/* Styling for profile picture */
+.profile-picture img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 8px solid var(--brown-color);
+}
+
+/* Styling for menu items */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-items li {
+  list-style: none;
+}
+
+.menu-items li a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--light-brown-color);
+  text-transform: uppercase;
+}
+
+.menu-items li a.active {
+  color: var(--white-color);
+}

@@ -1,7 +1,12 @@
 import React from "react";
+import LeftNav from "./components/LeftNav";
 
 const App = () => {
-  return <div>My React App</div>;
+  return (
+    <div>
+      <LeftNav />
+    </div>
+  );
 };
 
 export default App;
