@@ -27,7 +27,7 @@ const LeftNav = () => {
           <a href="#">interest</a>
         </li>
         <li>
-          <a href="#">awards</a>
+          <a href="#">certifications</a>
         </li>
       </ul>
     </div>
