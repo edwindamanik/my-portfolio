@@ -87,7 +87,8 @@ a {
 .about,
 .experience,
 .education,
-.skills {
+.skills,
+.interest {
   padding: 0 50px;
   display: flex;
   flex-direction: column;
@@ -98,7 +99,8 @@ a {
 
 .experience,
 .education,
-.skills {
+.skills,
+.interest {
   gap: 60px;
 }
 
@@ -172,7 +174,8 @@ a {
 /* Styling for experience and education */
 .experience h1,
 .education h1,
-.skills h1 {
+.skills h1,
+.interest h1 {
   font-family: var(--main-font);
   text-transform: uppercase;
   font-size: 40px;
@@ -257,4 +260,13 @@ a {
 .workflow ul li {
   list-style: none;
   font-family: var(--main-font);
+  font-size: 18px;
+}
+
+/* Styling for Interests content */
+.interest p {
+  list-style: none;
+  font-family: var(--main-font);
+  font-size: 18px;
+  color: var(--description-profile-color);
 }
