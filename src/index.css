@@ -86,7 +86,8 @@ a {
 /* Styling for container each of components */
 .about,
 .experience,
-.education {
+.education,
+.skills {
   padding: 0 50px;
   display: flex;
   flex-direction: column;
@@ -96,7 +97,8 @@ a {
 }
 
 .experience,
-.education {
+.education,
+.skills {
   gap: 60px;
 }
 
@@ -169,7 +171,8 @@ a {
 
 /* Styling for experience and education */
 .experience h1,
-.education h1 {
+.education h1,
+.skills h1 {
   font-family: var(--main-font);
   text-transform: uppercase;
   font-size: 40px;
@@ -219,4 +222,39 @@ a {
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 25px;
+}
+
+/* Styling for skills */
+.skills h4 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: var(--description-profile-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.skills-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.skills-list i {
+  font-size: 55px;
+  color: var(--description-profile-color);
+}
+
+.workflow ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--description-profile-color);
+  font-weight: 400;
+  margin: 20px 0px 0px 20px;
+}
+
+.workflow ul li {
+  list-style: none;
+  font-family: var(--main-font);
 }

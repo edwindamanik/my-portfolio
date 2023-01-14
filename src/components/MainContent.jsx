@@ -2,6 +2,7 @@ import React from "react";
 import About from "./About";
 import Education from "./Education";
 import Experience from "./Experience";
+import Skills from "./Skills";
 
 const MainContent = () => {
   return (
@@ -9,6 +10,7 @@ const MainContent = () => {
       <About />
       <Experience />
       <Education />
+      <Skills />
     </div>
   );
 };
