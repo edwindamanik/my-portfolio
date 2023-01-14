@@ -72,6 +72,10 @@ a {
   color: var(--white-color);
 }
 
+.menu-items li a:hover {
+  color: var(--white-color);
+}
+
 /* Styling untuk konten utama */
 .main-content {
   margin-left: 17rem;
@@ -79,9 +83,10 @@ a {
   height: 100vh;
 }
 
-/* Styling for about content */
+/* Styling for container each of components */
 .about,
-.experience {
+.experience,
+.education {
   padding: 0 50px;
   display: flex;
   flex-direction: column;
@@ -90,10 +95,12 @@ a {
   border-bottom: 1px solid var(--border-color);
 }
 
-.experience {
+.experience,
+.education {
   gap: 60px;
 }
 
+/* Styling for about content */
 .about h2 {
   font-family: var(--main-font);
   text-transform: uppercase;
@@ -160,8 +167,9 @@ a {
   background-color: var(--main-color);
 }
 
-/* Styling for experience */
-.experience h1 {
+/* Styling for experience and education */
+.experience h1,
+.education h1 {
   font-family: var(--main-font);
   text-transform: uppercase;
   font-size: 40px;
@@ -169,14 +177,16 @@ a {
   color: var(--name-color);
 }
 
-.list-experience div {
+.list-experience div,
+.list-education div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.list-experience div h3 {
+.list-experience div h3,
+.list-education div h3 {
   font-family: var(--main-font);
   font-size: 25px;
   color: var(--black-color);
@@ -184,13 +194,15 @@ a {
   font-weight: 500;
 }
 
-.list-experience div span {
+.list-experience div span,
+.list-education div span {
   font-family: var(--main-font);
   font-size: 15px;
   color: var(--main-color);
 }
 
-.list-experience h4 {
+.list-experience h4,
+.list-education h4 {
   font-family: var(--main-font);
   font-size: 20px;
   color: var(--description-profile-color);
@@ -198,7 +210,8 @@ a {
   font-weight: 500;
 }
 
-.list-experience p {
+.list-experience p,
+.list-education p {
   margin-top: 20px;
   font-family: var(--main-font);
   color: var(--description-profile-color);
