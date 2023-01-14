@@ -1,3 +1,6 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +16,13 @@ a {
   --main-color: #bd5d38;
   --brown-color: #ca7d60;
   --white-color: #ffffff;
+  --black-color: #000000;
   --light-brown-color: #e1b6a4;
+  --main-font: 'Sofia Sans Semi Condensed', sans-serif;
+  --border-color: #cfcfcf;
+  --name-color: #343a40;
+  --description-profile-color: #65676a;
+  --social-media-color: #495057;
 }
 
 /* Styling for Side Navbar Contianer */
@@ -52,7 +61,7 @@ a {
 }
 
 .menu-items li a {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--main-font);
   font-size: 20px;
   font-weight: 800;
   color: var(--light-brown-color);
@@ -61,4 +70,140 @@ a {
 
 .menu-items li a.active {
   color: var(--white-color);
+}
+
+/* Styling untuk konten utama */
+.main-content {
+  margin-left: 17rem;
+  background-color: var(--white-color);
+  height: 100vh;
+}
+
+/* Styling for about content */
+.about,
+.experience {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience {
+  gap: 60px;
+}
+
+.about h2 {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-size: 90px;
+  color: var(--name-color);
+}
+
+.about h2:after {
+  color: var(--main-color);
+  content: 'Damanik';
+}
+
+/* Styling for description profile */
+.description-profile {
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--description-profile-color);
+}
+
+.description-profile span::after {
+  content: ' · ';
+  font-weight: bold;
+  margin: 0 2px;
+}
+
+.description-profile a {
+  color: var(--main-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Styling for skills description */
+.skills-description {
+  margin-top: 60px;
+  font-family: var(--main-font);
+  color: var(--description-profile-color);
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* styling for social media */
+.social-media {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.social-media a {
+  background-color: var(--social-media-color);
+  display: inline-block;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white-color);
+  font-size: 25px;
+}
+
+.social-media a:hover {
+  background-color: var(--main-color);
+}
+
+/* Styling for experience */
+.experience h1 {
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--name-color);
+}
+
+.list-experience div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-experience div h3 {
+  font-family: var(--main-font);
+  font-size: 25px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.list-experience div span {
+  font-family: var(--main-font);
+  font-size: 15px;
+  color: var(--main-color);
+}
+
+.list-experience h4 {
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: var(--description-profile-color);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.list-experience p {
+  margin-top: 20px;
+  font-family: var(--main-font);
+  color: var(--description-profile-color);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 25px;
 }
