@@ -22,22 +22,22 @@ const LeftNav = () => {
 
       <ul className="menu-items">
         <li>
-          <a href="#">about</a>
+          <a href="#about">about</a>
         </li>
         <li>
-          <a href="#">experience</a>
+          <a href="#experience">experience</a>
         </li>
         <li>
-          <a href="#">education</a>
+          <a href="#education">education</a>
         </li>
         <li>
-          <a href="#">skills</a>
+          <a href="#skills">skills</a>
         </li>
         <li>
-          <a href="#">interest</a>
+          <a href="#interest">interest</a>
         </li>
         <li>
-          <a href="#">certifications</a>
+          <a href="#certifications">certifications</a>
         </li>
       </ul>
     </div>
