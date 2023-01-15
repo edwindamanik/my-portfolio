@@ -2,7 +2,7 @@ import React from "react";
 
 const Interest = () => {
   return (
-    <div className="interest">
+    <div className="interest" id="interest">
       <h1>Interests</h1>
       <p>
         I have a high interest in building a website software using javascript
