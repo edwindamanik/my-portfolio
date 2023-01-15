@@ -6,19 +6,20 @@ const Certifications = () => {
       <h1>Certification</h1>
       <div className="list-certification">
         <p>
-          <i class="fa-solid fa-star"></i> React Developer & GraphQl Udemy
+          <i className="fa-solid fa-star"></i> React Developer & GraphQl Udemy
         </p>
         <p>
-          <i class="fa-solid fa-star"></i> Internship PT Javan Cipta Solusi
+          <i className="fa-solid fa-star"></i> Internship PT Javan Cipta Solusi
         </p>
         <p>
-          <i class="fa-solid fa-star"></i> Internship PT Liputan Enam dot Com
+          <i className="fa-solid fa-star"></i> Internship PT Liputan Enam dot
+          Com
         </p>
         <p>
-          <i class="fa-solid fa-star"></i> Virtual Internship Investree
+          <i className="fa-solid fa-star"></i> Virtual Internship Investree
         </p>
         <p>
-          <i class="fa-solid fa-star"></i> Google IT Support Coursera
+          <i className="fa-solid fa-star"></i> Google IT Support Coursera
         </p>
       </div>
     </div>
