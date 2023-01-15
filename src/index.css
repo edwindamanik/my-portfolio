@@ -27,6 +27,7 @@ a {
 
 /* Styling for Side Navbar Contianer */
 .left-navbar {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +39,24 @@ a {
   width: 17rem;
   height: 100vh;
   background-color: var(--main-color);
+}
+
+/* Styling for bars in left navbar */
+.fa-bars {
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  background-color: var(--white-color);
+  min-width: 40px;
+  min-height: 40px;
+  border: 2px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--main-color);
+  visibility: hidden;
 }
 
 /* Styling for profile picture */
@@ -94,7 +113,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  min-height: 100vh;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -244,6 +263,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .skills-list i {
@@ -291,4 +311,63 @@ a {
 .list-certification p i {
   color: gold;
   letter-spacing: 1px;
+}
+
+/* Styling for responsive to tablet device */
+@media only screen and (max-width: 972px) {
+  .left-navbar {
+    width: 12rem;
+  }
+
+  .main-content {
+    margin-left: 12rem;
+  }
+
+  .about h2 {
+    font-size: 70px;
+  }
+
+  .experience,
+  .education,
+  .skills,
+  .interest,
+  .certification {
+    gap: 40px;
+  }
+}
+
+/* Styling for responsive to mobile device */
+@media only screen and (max-width: 600px) {
+  .left-navbar {
+    width: 17rem;
+    margin-left: -17rem;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .experience,
+  .education,
+  .skills,
+  .interest,
+  .certification {
+    gap: 20px;
+    padding: 30px 50px;
+  }
+
+  .fa-bars {
+    visibility: visible;
+  }
+
+  /* Styling for action on click navbar */
+  .navbar-active {
+    margin-left: 0;
+    transition: .2s ease-in-out;
+  }
+
+  .navbar-inactive {
+    margin-left: -17rem;
+    transition: .2s ease-in-out;
+  }
 }

@@ -1,9 +1,19 @@
 import React from "react";
 import ProfilePicture from "../my-picture-sidamanik.png";
+import { useState } from "react";
 
 const LeftNav = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const navbarHandler = () => {
+    setNavbar(!navbar);
+  };
+
   return (
-    <div className="left-navbar">
+    <div
+      className={`left-navbar ${navbar ? "navbar-active" : "navbar-inactive"}`}
+    >
+      <i onClick={navbarHandler} className={`fa-solid fa-bars `}></i>
       <div className="profile-picture">
         <a href="#">
           <img src={ProfilePicture} alt="My Profile Picture" />
